@@ -1,24 +1,14 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+App configuration reference:
 
-Things you may want to cover:
+- Add 3 gems :
+    - gem 'devise'
+    - gem 'twitter-bootstrap-views'
+    - gem 'devise-views'
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Run following generators:
+    - rails g bootstrap:install static
+    - rails g bootstrap:layout application
+    - rails g devise:views:locale en
+    - rails generate devise:views:bootstrap_templates
